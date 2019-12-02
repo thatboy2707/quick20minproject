@@ -1,12 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import reactDOM from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+function Display() {
+    return (
+        <div>Did Yall get sick in there
+            <br />
+        <button>yes</button>
+            <button>nope</button>
+            <img
+                src="https://sevierair.com/wp-content/uploads/2016/09/kids.png"/>
+        </div>
+    )
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//https://sevierair.com/wp-content/uploads/2016/09/kids.png
+reactDOM.render(<Display />, document.querySelector('#root'));
